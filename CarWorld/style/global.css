@@ -1,0 +1,85 @@
+body{
+	background-image: url('../images/carworldbackground.png');
+	background-repeat: repeat-x;
+	background-color: #343333
+}
+#container{
+	margin: 0 auto 0;
+	width: 960px;
+	position: relative;
+}
+#header{
+	float: left;
+	width:960px;
+	height: 140px;
+	background-color: #FFB567;
+	
+}
+#navMenu{
+	text-align: center;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 960px;
+	height: 30px;
+	background-color: #000;
+	border-radius:6px;
+}
+.nav{
+	/*display: inline-block;*/
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	z-index: 4 !important;
+}
+.nav li{
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	background-color: #ccc;
+	z-index: 4 !important;
+	border-radius:6px;
+}
+.nav li a{
+	display: block;
+	text-align: center;
+	font-family: sans-serif;
+	text-decoration: none;
+	height: 30px;
+	width: 150;
+	display: block;
+	color: #FFF;
+	/*border: 1px solid #FFF;*/
+	text-shadow: 1px 1px 1px #000;
+}
+.nav ul{
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+}
+.nav li:hover ul{
+	visibility: visible;
+}
+
+#navMenu li:hover{
+	background-color: #09F;
+	color: #000;
+}
+#navMenu ul li:hover ul li a:hover{
+	background-color:#CCC;
+	color: #000;
+}
+#navMenu a:hover{
+	color: #000;
+}
+/*.clearFloat{
+	clear: both;
+}*/
+#content{
+	float: left;
+}
