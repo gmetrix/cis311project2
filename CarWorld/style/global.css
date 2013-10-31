@@ -6,6 +6,7 @@ body{
 #container{
 	margin: 0 auto 0;
 	width: 960px;
+	height: 100%;
 	position: relative;
 }
 #header{
@@ -16,23 +17,25 @@ body{
 	
 }
 #navMenu{
-	text-align: center;
 	display: block;
 	float: left;
 	margin: 0;
 	padding: 0;
 	width: 960px;
 	height: 30px;
-	background-color: #000;
-	border-radius:6px;
+	background: -webkit-linear-gradient(0deg, #FB000D, #ccc); /* For Safari */
+	background: -o-linear-gradient(0deg, #FB000D, #ccc); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #FB000D, #ccc); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #FB000D, #ccc); /* Standard syntax (must be last) */
 }
 .nav{
-	/*display: inline-block;*/
-	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width:750px;
 	margin: 0;
 	padding: 0;
 	line-height: 30px;
-	z-index: 4 !important;
+	z-index: -9999999 !important;
 }
 .nav li{
 	display: inline;
@@ -41,7 +44,10 @@ body{
 	padding: 0;
 	float: left;
 	position: relative;
-	background-color: #ccc;
+	background: -webkit-linear-gradient(0deg, #FB000D, #ccc); /* For Safari */
+	background: -o-linear-gradient(0deg, #FB000D, #ccc); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #FB000D, #ccc); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #FB000D, #ccc); /* Standard syntax (must be last) */
 	z-index: 4 !important;
 	border-radius:6px;
 }
@@ -70,16 +76,24 @@ body{
 	background-color: #09F;
 	color: #000;
 }
-#navMenu ul li:hover ul li a:hover{
-	background-color:#CCC;
+.nav li:hover ul li a:hover{
+	background: -webkit-linear-gradient(0deg, blue, white); /* For Safari */
+	background: -o-linear-gradient(0deg, blue, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, blue, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, blue, white); /* Standard syntax (must be last) */
+	
 	color: #000;
 }
 #navMenu a:hover{
 	color: #000;
 }
-/*.clearFloat{
-	clear: both;
-}*/
+
 #content{
 	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slideshow{
+	width:750;
+	margin: 0 auto;
 }
