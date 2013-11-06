@@ -4,17 +4,26 @@ body{
 	background-color: #343333
 }
 #container{
-	margin: 0 auto 0;
+	margin: 0 auto 0 auto;
 	width: 960px;
-	height: 100%;
+	/*height: 100%;*/
 	position: relative;
 }
 #header{
 	float: left;
 	width:960px;
 	height: 140px;
-	background-color: #FFB567;
+	/*background-color: rgba(255, 120, 0, 1.0);*/
+	background: -webkit-linear-gradient(0deg, #FF7800, #FFB573); /* For Safari */
+	background: -o-linear-gradient(0deg, #FF7800, #FFB573); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #FF7800, #FFB573); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #FF7800, #FFB573); /* Standard syntax (must be last) */
 	
+	
+}
+#logo{
+	float: left;
+	margin-left: 10px;
 }
 #navMenu{
 	display: block;
@@ -23,10 +32,10 @@ body{
 	padding: 0;
 	width: 960px;
 	height: 30px;
-	background: -webkit-linear-gradient(0deg, #FB000D, #ccc); /* For Safari */
-	background: -o-linear-gradient(0deg, #FB000D, #ccc); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg, #FB000D, #ccc); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(0deg, #FB000D, #ccc); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Safari */
+	background: -o-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #028E9B, #5EC4CD); /* Standard syntax (must be last) */
 }
 .nav{
 	margin-left: auto;
@@ -35,7 +44,7 @@ body{
 	margin: 0;
 	padding: 0;
 	line-height: 30px;
-	z-index: -9999999 !important;
+	z-index: 9999999 !important;
 }
 .nav li{
 	display: inline;
@@ -44,11 +53,12 @@ body{
 	padding: 0;
 	float: left;
 	position: relative;
-	background: -webkit-linear-gradient(0deg, #FB000D, #ccc); /* For Safari */
-	background: -o-linear-gradient(0deg, #FB000D, #ccc); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg, #FB000D, #ccc); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(0deg, #FB000D, #ccc); /* Standard syntax (must be last) */
-	z-index: 4 !important;
+	background: -webkit-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Safari */
+	background: -o-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #028E9B, #5EC4CD); /* Standard syntax (must be last) */
+	z-index: 9999999 !important;
+	width: 150px;
 	border-radius:6px;
 }
 .nav li a{
@@ -60,6 +70,7 @@ body{
 	width: 150;
 	display: block;
 	color: #FFF;
+	font-size: 18px;
 	/*border: 1px solid #FFF;*/
 	text-shadow: 1px 1px 1px #000;
 }
@@ -77,11 +88,11 @@ body{
 	color: #000;
 }
 .nav li:hover ul li a:hover{
-	background: -webkit-linear-gradient(0deg, blue, white); /* For Safari */
-	background: -o-linear-gradient(0deg, blue, white); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg, blue, white); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(0deg, blue, white); /* Standard syntax (must be last) */
-	
+	background: -webkit-linear-gradient(0deg, #FF7800, #FFB573); /* For Safari */
+	background: -o-linear-gradient(0deg, #FF7800, #FFB573); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #FF7800, #FFB573); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #FF7800, #FFB573); /* Standard syntax (must be last) */
+	border-radius: 6px;
 	color: #000;
 }
 #navMenu a:hover{
@@ -89,11 +100,49 @@ body{
 }
 
 #content{
+	/*background-color: #FF;*/
+	border-radius: 6px;
 	float: left;
+	width: 960px;
+	font-family: sans-serif;/*
+	#FF7800, #FFB573
+	rgba(255, 120, 00, 0.75)
+	rgba(255, 181, 115, 0.50)*/
+}
+#content h1{
+	font-family: sans-serif;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 140px;
+	text-shadow: 1px 1px 1px #000;
 }
-.slideshow{
-	width:750;
-	margin: 0 auto;
+#details{
+	padding: 10px;
+	clear:both;
+	position: relative;
+	margin-top: 40px;
+	max-width: 960px;
+	background-color: rgba(255, 120, 0, 1.0);
+	border-radius:6px;
+}
+#leftdetails{
+	float: left;
+	max-width: 480px;
+	margin-left: 10px;
+	background-color: #FFB573;
+}
+#gioDetail,#sergDetail{
+	float: left;
+	border-radius: 2px #35C0CD;
+	background-color: #FF9A40;
+	width:436px;
+}
+#gioDetail{
+	margin-right: 10px;
+}
+#sergDetail{
+	margin-left: 10px;
+}
+#contactus{
+
 }
