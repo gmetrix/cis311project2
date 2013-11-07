@@ -34,7 +34,7 @@ body{
 	height: 30px;
 	background: -webkit-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Safari */
 	background: -o-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Firefox 3.6 to 15 */
+	background: -moz-linear-gradient(0deg,#028E9B, #5EC4CD); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(0deg, #028E9B, #5EC4CD); /* Standard syntax (must be last) */
 }
 .nav{
