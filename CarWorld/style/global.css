@@ -132,6 +132,7 @@ hr{
 	font-family: sans-serif;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0;
 	text-shadow: 1px 1px 3px #000;
 }
 #business{
@@ -156,6 +157,7 @@ hr{
  text-align: center;
 }
 #cwinfo{
+	font-size: 18px;
 	width: 440px;
 	float: left;
 	position: relative;
@@ -285,8 +287,12 @@ hr{
 ul.flist{
 	list-style: none outside none;
 	padding: 0;
+
 	/*list-style-type: none;*/
 	/*margin: 0;*/
+}
+ul.flist p{
+	font-weight: bold;
 }
 ul.flist li{
 	margin-left: 10px;
@@ -316,4 +322,17 @@ ul.flist li.lastLi{
 	position: relative;
 	margin-left: 10px;
 	margin-right:20px;
+}
+/*support section*/
+#supportSection{
+	width: 920px;
+	float: left;
+	position: relative;
+	margin: 0 20px 0;
+}
+#supportSection hr{
+	margin-top: 0;
+}
+#supportSection ol a{
+	color: #003366;
 }
