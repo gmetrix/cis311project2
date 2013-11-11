@@ -1,7 +1,19 @@
 body{
-	background-image: url('../images/carworldbackground.png');
-	background-repeat: repeat-x;
-	background-color: #343333
+	background-color: black;
+	background-image: url('../images/pattern2.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+hr{
+	clear: both;
+	border-top: 1px solid rgb(34, 34, 34);
+	border bottom: 1px solid rgb(119,119,119);
+	margin: 17px 0 17px;
 }
 #container{
 	margin: 0 auto 0 auto;
@@ -12,12 +24,12 @@ body{
 #header{
 	float: left;
 	width:960px;
-	height: 140px;
+	/*height: 140px;*/
 	/*background-color: rgba(255, 120, 0, 1.0);*/
-	background: -webkit-linear-gradient(0deg, #FF7800, #FFB573); /* For Safari */
-	background: -o-linear-gradient(0deg, #FF7800, #FFB573); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg, #FF7800, #FFB573); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(0deg, #FF7800, #FFB573); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(0deg, rgba(0, 51, 102,0.75), rgba(51, 153, 255,0.75)); /* For Safari */
+	background: -o-linear-gradient(0deg, rgba(0, 51, 102,0.75), rgba(51, 153, 255,0.75)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, rgba(0, 51, 102,0.75), rgba(51, 153, 255,0.75)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, rgba(0, 51, 102,0.75), rgba(51, 153, 255,0.75)); /* Standard syntax (must be last) */
 	
 	
 }
@@ -32,10 +44,7 @@ body{
 	padding: 0;
 	width: 960px;
 	height: 30px;
-	background: -webkit-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Safari */
-	background: -o-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg,#028E9B, #5EC4CD); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(0deg, #028E9B, #5EC4CD); /* Standard syntax (must be last) */
+	/*background: #3399FF;*/
 }
 .nav{
 	margin-left: auto;
@@ -53,10 +62,7 @@ body{
 	padding: 0;
 	float: left;
 	position: relative;
-	background: -webkit-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Safari */
-	background: -o-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(0deg, #028E9B, #5EC4CD); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(0deg, #028E9B, #5EC4CD); /* Standard syntax (must be last) */
+	/*background: #3399FF;*/
 	z-index: 9999999 !important;
 	width: 150px;
 	border-radius:6px;
@@ -67,7 +73,7 @@ body{
 	font-family: sans-serif;
 	text-decoration: none;
 	height: 30px;
-	width: 150;
+	width: 150px;
 	display: block;
 	color: #FFF;
 	font-size: 18px;
@@ -79,12 +85,16 @@ body{
 	visibility: hidden;
 	top: 30px;
 }
-.nav li:hover ul{
+.nav li:hover ul li{
 	visibility: visible;
+	background: -webkit-linear-gradient(0deg, #003366, #3399FF); /* For Safari */
+	background: -o-linear-gradient(0deg, #003366, #3399FF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg,#003366, #3399FF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #003366, #3399FF); 
 }
 
 #navMenu li:hover{
-	background-color: #09F;
+	/*background-color: #09F;*/
 	color: #000;
 }
 .nav li:hover ul li a:hover{
@@ -98,6 +108,61 @@ body{
 #navMenu a:hover{
 	color: #000;
 }
+#slideContainer{
+	position: relative;
+	width:960px;
+	float: left;
+	margin-bottom: 30px;
+}
+#content{
+	
+	border-radius: 6px;
+	float: left;
+	width: 960px;
+	font-family: sans-serif;
+	background:rgba(255, 204, 153, 0.5);
+	margin-bottom: 30px;
+	/*padding:0 25px 25px;*/
+	/*
+	#FF7800, #FFB573
+	rgba(255, 120, 00, 0.75)
+	rgba(255, 181, 115, 0.50)*/
+}
+#content h1{
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 1px 1px 3px #000;
+}
+#business{
+	position: relative;
+	width:920px;
+	margin:0 20px 0;
+	clear: both;
+
+}
+#leftHead{
+	width: 440px;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	/*margin-left: 20px;*/
+}
+#lefthead h1{
+	/*max-width: 440px;*/
+ font-size: 30px;
+ font-weight: bold;
+ text-align: center;
+}
+#cwinfo{
+	width: 440px;
+	float: left;
+	position: relative;
+	/*margin-right: 17px;*/
+	margin-left: 20px;
+}
+
 
 #contentRight{
 	/*background-color: #FF;*/
@@ -162,4 +227,93 @@ body{
 #contactus{
 
 }
+/*styles for product page*/
+#catalogue{
+	width: 910px;
+	padding:0 25px 51px;
+	color: rgb(255,255,255);
+}
+#catalogue ul{
+	list-style: none outside none;
+	padding: 0;
+}
+#catalogue li{
+	margin:0 51px 20px 51px;
+	width:353px;
+}
+#catalogue li p{
+	position: relative;
+	border-radius: 0px 0px 10px 1px;
+	border: 1px solid rgba(255,255,255, 0.2);
+	background-color: rgba(0,0,0,0.9);
+	color: rgb(255,255,255);
+	padding: 2px 5px 2px 5px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.9);
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+#catalogue li img{
+	position: relative;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s ease;
+	margin: 0px 0px -30px 0px;
+	z-index: 0;
+}
+#catalogue li img:hover{
+	opacity: 1.0;
+}
+#catalogue li a{
+	border:none;
 
+}
+.cars{
+	float: left;
+	width:193px;
+}
+#footer{
+	width: 960px;
+	color: #000;
+	padding: 0;
+	position: relative;
+	border-radius: 6px;
+	float: left;
+	font-family: sans-serif;
+	background:rgba(255, 204, 153, 0.5);
+}
+
+ul.flist{
+	list-style: none outside none;
+	padding: 0;
+	/*list-style-type: none;*/
+	/*margin: 0;*/
+}
+ul.flist li{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 215px;
+	float: left;
+	position: relative;
+
+}
+ul.flist li h4{
+	margin: 0;
+}
+ul.flist li hr{
+	margin: 5px 0 5px;
+}
+
+ul.flist li.firstLi{
+	width: 215px;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-right:10px;
+}
+ul.flist li.lastLi{
+	width: 215px;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right:20px;
+}
