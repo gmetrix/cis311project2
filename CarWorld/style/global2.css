@@ -161,6 +161,15 @@ body{
 	max-width: 140px;
 	text-shadow: 1px 1px 1px #000;
 }
+#management{
+	padding: 10px;
+	clear:both;
+	position: relative;
+	margin-top: 40px;
+	max-width: 960px;
+	background-color: rgba(255, 120, 0, 1.0);
+	border-radius:6px;	
+}
 #details{
 	padding: 10px;
 	clear:both;
@@ -169,6 +178,7 @@ body{
 	max-width: 960px;
 	background-color: rgba(255, 120, 0, 1.0);
 	border-radius:6px;
+	text-align: left;	
 }
 #leftdetails{
 	float: left;
@@ -176,18 +186,7 @@ body{
 	margin-left: 10px;
 	background-color: #FFB573;
 }
-#gioDetail,#sergDetail{
-	float: left;
-	border-radius: 2px #35C0CD;
-	background-color: #FF9A40;
-	width:436px;
-}
-#gioDetail{
-	margin-right: 10px;
-}
-#sergDetail{
-	margin-left: 10px;
-}
+
 #contactus{
 
 }
