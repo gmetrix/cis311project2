@@ -98,6 +98,35 @@ body{
 #navMenu a:hover{
 	color: #000;
 }
+#sideNav{
+	background: -webkit-linear-gradient(0deg, #FFB573, #FF7800); /* For Safari */
+	background: -o-linear-gradient(0deg, #FFB573, #FF7800); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #FFB573, #FF7800); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #FFB573, #FF7800); /* Standard syntax (must be last) */
+	float: left;
+	width: 960px;
+	font-family: sans-serif;/*
+	#FF7800, #FFB573
+	rgba(255, 120, 00, 0.75)
+	rgba(255, 181, 115, 0.50)*/
+}
+#content{
+	background-color: #FFAA00;
+	float: right;
+	width: 960px;
+	font-family: sans-serif;/*
+	#FF7800, #FFB573
+	rgba(255, 120, 00, 0.75)
+	rgba(255, 181, 115, 0.50)*/
+}
+#content h1{
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 140px;
+	text-shadow: 1px 1px 1px #000;
+}
+
 
 #contentRight{
 	/*background-color: #FF;*/
