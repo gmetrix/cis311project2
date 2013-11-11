@@ -323,16 +323,56 @@ ul.flist li.lastLi{
 	margin-left: 10px;
 	margin-right:20px;
 }
+ul.secondLi{
+	list-style: none outside none;
+	padding: 0;
+
+	/*list-style-type: none;*/
+	/*margin: 0;*/
+}
 /*support section*/
 #supportSection{
 	width: 920px;
 	float: left;
 	position: relative;
-	margin: 0 20px 0;
+	margin: 0 20px 10px;
+}
+#supportSection a{
+	color: #3399FF;
+}
+#supportSection a:hover{
+	color: #FF9966;
 }
 #supportSection hr{
 	margin-top: 0;
 }
 #supportSection ol a{
 	color: #003366;
+	font-size: 18px;
+}
+#supportSection p{
+	font-size: 18px;
+}
+/*Admin page*/
+#productsTable{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:100%;
+	border-collapse: collapse;
+}
+#productsTable th 
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#FF9966;
+color:#ffffff;
+}
+#productsTable td, #productsTable th{
+	font-size: 1em;
+	border: 1px solid #FF9966;
+}
+#productsTable tr.alternative td{
+	background: #FFF;
+	color: #000;
 }
