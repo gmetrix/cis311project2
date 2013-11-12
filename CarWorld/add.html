@@ -43,9 +43,49 @@
 					</ul>
 			</div>
 
-			<div id="content" style="background-color:#FFAA00;height:400px;width:960px;align="center">
-				<center><br><br><br><br>
-				CONTENT!!!
+			<div id="content">
+				<center><h1>Add Item</h1><b>
+				<p><font size="1">(<font color = "red">*</font>)Required Field</font></p>
+				<form action="confirm.html" onsubmit="validateForm()" name="contactForm" method="post">
+                                        <table>
+                                                <tr>
+                                                        <td>Product name: <span style="color:red;">*</span></td>
+                                                        <td><input type="text"  name="productName" required></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Stock Qty.: <span style="color:red">*</span></td>
+                                                        <td><input type="number" name ="stock" min="1" required></td>
+                                                </tr>
+						<tr>
+                                                        <td>Unit Price: <span style="color:red">*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$</td>
+                                                        <td><input type="number" name ="price" min="1" required></td>
+                                                </tr>
+                                                <tr>
+                                                        <td style="padding-left:18px" required>Category: </td>
+                                                        <td><select name="category">
+                                                        <option value="issue1">Compact</option>
+                                                        <option value="issue2">Sports</option>
+                                                        <option value="issue3">SUV</option>
+                                                        <option value="issue4">Pickup</option>
+                                                        </select></td>
+                                                        
+                                                </tr>
+                                                <tr>
+                                                        <td> Description:</td>
+                                                        <td><textarea cols="30" rows="5" name="description" placeholder="Add details here..." required></textarea></td>
+                                                </tr>
+                                                <tr>
+							<td> Upload Photo:</td>
+							<td><input type="file" value="Browse">
+						</tr>
+						<tr>
+
+                                                        <td>
+                                                                <input type="submit" value="Add Item">
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                </form>
 				</center>
 			</div>
 
