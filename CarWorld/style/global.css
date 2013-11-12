@@ -120,7 +120,7 @@ hr{
 	float: left;
 	width: 960px;
 	font-family: sans-serif;
-	background:rgba(255, 204, 153, 0.5);
+	background:rgba(255, 204, 153, 0.75);
 	margin-bottom: 30px;
 	/*padding:0 25px 25px;*/
 	/*
@@ -334,6 +334,50 @@ ul.secondLi{
 
 
 /*Admin page*/
+#adminSection{
+	width: 920px;
+	float: left;
+	position: relative;
+	margin: 0 20px 0;
+}
+#adminSection h1{
+	display: inline-block;
+	max-width: 460px;
+
+}
+#buttonArea{
+	position: relative;
+	float: right;
+	width:150px;
+}
+.addButton{
+	display: inline-block;
+	background: -webkit-linear-gradient(0deg, #FF7800, #FFB573); /* For Safari */
+	background: -o-linear-gradient(0deg, #FF7800, #FFB573); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, #FF7800, #FFB573); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, #FF7800, #FFB573); /* Standard syntax (must be last) */
+	position: relative;
+	margin: 30px 10px;
+	width:100px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius:6px;
+	text-align: center;
+	text-indent: 0;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000;
+	box-shadow: 1px 1px 1px rgba(0,0,0,1.0);
+}
+.addButton:hover{
+	background: -webkit-linear-gradient(0deg, rgba(0, 51, 102,1.0), rgba(51, 153, 255,1.0)); /* For Safari */
+	background: -o-linear-gradient(0deg, rgba(0, 51, 102,1.0), rgba(51, 153, 255,1.0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, rgba(0, 51, 102, 1.0), rgba(51, 153, 255, 1.0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, rgba(0, 51, 102, 1.0), rgba(51, 153, 255, 1.0)); /* Standard syntax (must be last) */
+	color: #fff;
+}
 #productsTable{
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	width:100%;
