@@ -1,4 +1,4 @@
-var global =0;
+var global;
 function validateForm() {
 		var product = document.forms["productForm"]["productName"].value;
 		var s = document.forms["productForm"]["stock"].value;
@@ -7,21 +7,20 @@ function validateForm() {
 			alert("user must fill out the appropriate fields");
 			return false;
 		}
-		else{
-			global =1;
-			return true;
-		}
+		// global =1;
+		// display();
 }
-
-function display()
+function display(arg)
 {
 	var d = new Date();
-	// var test = window.open("./confirm.html","_parent");
-	if(global ==1){
+	
+	if(arg ==1){
+		var test = window.open("./confirm.html","_self", "",true);
 		var x = "This product has been added!<br> "
 		var z = x + d;
-		document.getElementById("confirmMe").innerHTML=z;
-	    setTimeout(window.open("./index.html", _parent),3000); // after 2 sec it will close
+		// document.write("hello world");
+		test.document.getElementById("confirmMe").innerHTML=x;
+	    // setTimeout(window.open("./index.html", "_parent"), 8000); // after 2 sec it will close
 	}
 
 
