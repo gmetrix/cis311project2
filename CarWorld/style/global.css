@@ -235,6 +235,54 @@ hr{
 	margin-left: 10px;
 	background-color: #FFB573;
 }
+#productlist{
+	width: 920px;
+	padding:0 20px 20px;
+	margin-bottom: 20px;
+}
+#productlist ul{
+	list-style: none outside none;
+	padding: 0;
+}
+li.first{
+	float: left;
+	width:215px;
+	margin: 0 10px 20px;
+}
+#firstList{
+	margin: 0 0 0 10px;
+}
+#lastList{
+	margin: 0 10px 0 0;
+}
+li.first img{
+	margin: 0px 0px -5px 0px;
+}
+
+.prodparagragh{
+	float: left;
+	color: #FFF;
+	width: 215px;
+	height: 74px;
+	font-size: 18px;
+	font-weight: bold;
+	background: #000;
+	border-radius: 0px 0px 10px 1px;
+	text-align: center;
+	/*line-height: 74px;*/
+
+}
+.prodparagragh ol{
+	list-style-position: inline;
+	font-size: 12px;
+	-webkit-padding-start: 20px;
+}
+#embed{
+	text-align: left;
+	width: 200px;
+	margin-left: 0px;
+	margin-right: 0;
+}
 /*styles for product page*/
 #catalogue{
 	width: 910px;
