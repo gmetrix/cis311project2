@@ -10,6 +10,9 @@
 		
         <link rel="stylesheet" type="text/css" href="engine1/style.css" />
 	    <script type="text/javascript" src="engine1/jquery.js"></script>
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+	    <script type="text/javascript" src="script/global.js"></script>
+
 	</head>
 	<body>
 		<div id="container">
@@ -21,10 +24,7 @@
 				  <input type="text" name="q" size="20" />
 				  <input type="submit" name="sa" value="Search" />
 				</form>
-				
-							
-			</div>
-			<div id="navMenu" align="center">
+				<div id="navMenu" align="center">
 					<ul class="nav">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="products.html">Products</a>
@@ -41,16 +41,18 @@
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="contactus.html">Contact Us</a></li>
 					</ul>
+				</div><!--end of nav menu-->
+							
 			</div>
 
 			<div id="content">
 				<center><h1>Add Item</h1><b>
 				<p><font size="1">(<font color = "red">*</font>)Required Field</font></p>
-				<form action="confirm.html" onsubmit="validateForm()" name="contactForm" method="post">
+				<form action="confirm.html" method="post"  name="productForm">
                                         <table>
                                                 <tr>
-                                                        <td>Product name: <span style="color:red;">*</span></td>
-                                                        <td><input type="text"  name="productName" required></td>
+                                                    <td>Product name: <span style="color:red;">*</span></td>
+                                                    <td><input type="text"  name="productName" required></td>
                                                 </tr>
                                                 <tr>
                                                         <td>Stock Qty.: <span style="color:red">*</span></td>
@@ -81,7 +83,7 @@
 						<tr>
 
                                                         <td>
-                                                                <input type="submit" value="Add Item">
+                                                                <input type="submit" value="Add Item" onclick="dynamicMessage(1)">
                                                         </td>
                                                 </tr>
                                         </table>
