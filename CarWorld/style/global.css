@@ -162,12 +162,29 @@ hr{
 	margin-left: 20px;
 }
 
-
-#contentRight{
-	/*background-color: #FF;*/
+#sideNav{
+	border-radius: 6px;
 	float: left;
-	width: 960px;
-	font-family: sans-serif;/*
+	width: 160px;
+	font-family: sans-serif;
+	background:rgba(0, 51, 102,0.75);
+	margin-bottom: 30px;
+	/*padding:0 25px 25px;*/
+	/*
+	#FF7800, #FFB573
+	rgba(255, 120, 00, 0.75)
+	rgba(255, 181, 115, 0.50)*/
+}
+#contentRight{
+	border-radius: 6px;
+	float: right;
+	width: 480px;
+	height: 500px;
+	font-family: sans-serif;
+	background:rgba(255, 204, 153, 0.75);
+	margin-bottom: 30px;
+	/*padding:0 25px 25px;*/
+	/*
 	#FF7800, #FFB573
 	rgba(255, 120, 00, 0.75)
 	rgba(255, 181, 115, 0.50)*/
@@ -176,15 +193,20 @@ hr{
 	font-family: sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 140px;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 3px #000;
 }
 
 #contentLeft{
-	/*background-color: #FF;*/
+	border-radius: 6px;
 	float: left;
-	width: 960px;
-	font-family: sans-serif;/*
+	width: 480px;
+	height: 500px;
+	font-family: sans-serif;
+	font-weight: bold;
+	background:rgba(255, 204, 153, 0.75);
+	margin-bottom: 30px;
+	/*padding:0 25px 25px;*/
+	/*
 	#FF7800, #FFB573
 	rgba(255, 120, 00, 0.75)
 	rgba(255, 181, 115, 0.50)*/
@@ -197,34 +219,21 @@ hr{
 	text-shadow: 1px 1px 1px #000;
 }
 #details{
-	padding: 10px;
-	clear:both;
-	position: relative;
-	margin-top: 40px;
-	max-width: 960px;
-	background-color: rgba(255, 120, 0, 1.0);
-	border-radius:6px;
+	border-radius: 6px;
+	width: 960px;
+	font-family: sans-serif;
+	margin-bottom: 30px;
+	/*padding:0 25px 25px;*/
+	/*
+	#FF7800, #FFB573
+	rgba(255, 120, 00, 0.75)
+	rgba(255, 181, 115, 0.50)*/
 }
 #leftdetails{
 	float: left;
 	max-width: 480px;
 	margin-left: 10px;
 	background-color: #FFB573;
-}
-#gioDetail,#sergDetail{
-	float: left;
-	border-radius: 2px #35C0CD;
-	background-color: #FF9A40;
-	width:436px;
-}
-#gioDetail{
-	margin-right: 10px;
-}
-#sergDetail{
-	margin-left: 10px;
-}
-#contactus{
-
 }
 /*styles for product page*/
 #catalogue{
