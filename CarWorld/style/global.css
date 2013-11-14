@@ -4,10 +4,17 @@ body{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	margin: 0;
+	margin: 0 auto;
+	font-size:12px;
+	font-family: Sans-serif;
+	font-weight:bold;
 }
 a{
 	text-decoration: none;
+	a:link {color:#2c6EB0;}      /* unvisited link */
+	a:visited {color:#990000;text-decoration:underline;}  /* visited link */
+	a:hover {color:#990000;}  /* mouse over link */
+	a:active {color:#990000;}  /* selected link */
 }
 hr{
 	clear: both;
@@ -15,6 +22,16 @@ hr{
 	border bottom: 1px solid rgb(119,119,119);
 	margin: 17px 0 17px;
 }
+table{
+	border: 0px;
+	border-collapse: collapse;
+	font-size:12px;
+}
+ul 
+{
+	list-style-type:square;
+}
+
 #container{
 	margin: 0 auto 0 auto;
 	width: 960px;
@@ -127,10 +144,11 @@ hr{
 	rgba(255, 120, 00, 0.75)
 	rgba(255, 181, 115, 0.50)*/
 }
-#content h1{
+#content h1, #content h2{
 	font-family: sans-serif;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top:auto;
 	text-shadow: 1px 1px 3px #000;
 }
 #business{
@@ -336,7 +354,7 @@ li.first img{
 	border-radius: 6px;
 	float: left;
 	font-family: sans-serif;
-	background:rgba(255, 204, 153, 0.75);
+	background:rgba(235, 234, 233, 0.75);
 }
 
 
